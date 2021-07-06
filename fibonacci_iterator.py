@@ -25,7 +25,7 @@ class FibonacciIterable:
         Get the next value in the sequence
         If the requested number of values is exceeded, raises StopIteration
         """
-        if self.count >= self.number:
+        if self.number > 0 and self.count >= self.number:
             raise StopIteration
         self.count += 1
         current = self.current
